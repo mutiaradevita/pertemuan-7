@@ -6,3 +6,6 @@ Praktikum 2 : Implementasi button row
 
 Praktikum 3 : Implementasi text section
 ![Alt text](image-2.png)
+
+Praktikum 4 
+![Alt text](image-3.png)
