@@ -8,16 +8,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Tambahkan gambar di atas Container "Paralayang"
-    Widget imageSection = Padding(
-        padding: const EdgeInsets.only(bottom: 5.0),
-        child: Image.network(
-          'https://asset.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fcity-light&psig=AOvVaw37nVSlQdH0YeIUOdGKUw8_&ust=1696944748527000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLixxfmJ6YEDFQAAAAAdAAAAABAE',
-          width: 500.0, // Sesuaikan lebar gambar sesuai kebutuhan Anda
-          height: 300.0, // Sesuaikan tinggi gambar sesuai kebutuhan Anda
+    // Widget imageSection = Padding(
+    //     padding: const EdgeInsets.only(bottom: 5.0),
+    //     child: Image.network(
+    //       'https://asset.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fcity-light&psig=AOvVaw37nVSlQdH0YeIUOdGKUw8_&ust=1696944748527000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLixxfmJ6YEDFQAAAAAdAAAAABAE',
+    //       width: 500.0, // Sesuaikan lebar gambar sesuai kebutuhan Anda
+    //       height: 300.0, // Sesuaikan tinggi gambar sesuai kebutuhan Anda
 
-          fit: BoxFit
-              .cover, // Sesuaikan mode tampilan gambar sesuai kebutuhan Anda
-        ));
+    //       fit: BoxFit
+    //           .cover, // Sesuaikan mode tampilan gambar sesuai kebutuhan Anda
+    //     ));
     Widget titleSection = Container(
       padding: const EdgeInsets.all(16.0),
       child: Row(
@@ -104,7 +104,13 @@ class MyApp extends StatelessWidget {
         ),
         body: ListView(
           children: [
-            imageSection,
+            Image.asset(
+              'images/paralayang.jpeg',
+              width: 600,
+              height: 240,
+              fit: BoxFit.cover,
+            ),
+            // imageSection,
             titleSection,
             buttonSection,
             textSection
